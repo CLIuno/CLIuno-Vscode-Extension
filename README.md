@@ -1,71 +1,48 @@
-# cliuno README
+# CLIuno
 
-This is the README for your extension "cliuno". After writing up a brief description, we recommend including the following sections.
+Scaffold a working full-stack app from CLIuno's contract-tested templates — without
+leaving VS Code. Pick a stack, and the extension clones the right template, installs
+dependencies, and opens the project.
 
-## Features
+Every CLIuno frontend works with every CLIuno backend: each pair is proven by a live
+compatibility matrix (the shared demo app — auth, users, todos, posts + comments,
+follows, OTP — on one REST contract). So whatever you pick, you start from something
+that already runs.
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+## Usage
 
-For example if there is an image subfolder under your extension project workspace:
+1. Open the Command Palette (`Ctrl/Cmd+Shift+P`).
+2. Run **CLIuno: Scaffold a new app**.
+3. Answer the prompts:
+   - **Kind** — frontend (web), backend (REST API), mobile, or full-stack (one repo).
+   - **Stack** — the specific framework.
+   - **Package manager** — for JS/TS stacks (pnpm / npm / yarn / bun).
+   - **Location** and **project name**.
+4. The extension clones the template, detaches it from the template's git history
+   (`git init` a fresh repo), installs dependencies, and offers to open the project.
 
-\!\[feature X\]\(images/feature-x.png\)
+## What you can scaffold
 
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
+- **Frontends** — React, Vue, Solid, Next.js, Svelte, Nuxt, Angular
+  (shadcn-style UI on Tailwind v4).
+- **Backends** — Express, Fastify, NestJS, AdonisJS, Django, FastAPI, Laravel, Rails,
+  Spring Boot, ASP.NET, Drogon (C++). All serve `/api/v1` on SQLite out of the box.
+- **Full-stack** — TALL stack (Laravel + Livewire/Volt) in one repo.
+- **Mobile** — Flutter, React Native (Expo).
 
 ## Requirements
 
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
+- **Git** on your `PATH` (used to clone the template).
+- The chosen stack's toolchain for the dependency install step (e.g. Node + your
+  package manager, `composer`, `uv`, `bundler`, `flutter`, the .NET/JDK SDKs). If a
+  toolchain is missing, the project is still cloned — the extension tells you the
+  install command to run yourself.
 
-## Extension Settings
+## About
 
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
+Powered by the [CLIuno](https://github.com/CLIuno) templates and the `cliuno` CLI.
+The extension scaffolds natively (clones + installs itself); the CLI is not required.
 
-For example:
+## License
 
-This extension contributes the following settings:
-
-* `myExtension.enable`: Enable/disable this extension.
-* `myExtension.thing`: Set to `blah` to do something.
-
-## Known Issues
-
-Calling out known issues can help limit users opening duplicate issues against your extension.
-
-## Release Notes
-
-Users appreciate release notes as you update your extension.
-
-### 1.0.0
-
-Initial release of ...
-
-### 1.0.1
-
-Fixed issue #.
-
-### 1.1.0
-
-Added features X, Y, and Z.
-
----
-
-## Following extension guidelines
-
-Ensure that you've read through the extensions guidelines and follow the best practices for creating your extension.
-
-* [Extension Guidelines](https://code.visualstudio.com/api/references/extension-guidelines)
-
-## Working with Markdown
-
-You can author your README using Visual Studio Code. Here are some useful editor keyboard shortcuts:
-
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux).
-* Toggle preview (`Shift+Cmd+V` on macOS or `Shift+Ctrl+V` on Windows and Linux).
-* Press `Ctrl+Space` (Windows, Linux, macOS) to see a list of Markdown snippets.
-
-## For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
-
-**Enjoy!**
+GNU Affero General Public License v3.0 — see [LICENSE](LICENSE).
