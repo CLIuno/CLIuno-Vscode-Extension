@@ -3,6 +3,10 @@
 All notable changes to the CLIuno extension are documented here, following
 [Keep a Changelog](https://keepachangelog.com/).
 
+## [2.1.2]
+
+- Use the CLIuno brand logo (1N∞) as the extension icon.
+
 ## [2.1.1]
 
 Initial release.

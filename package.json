@@ -2,7 +2,7 @@
   "name": "cliuno",
   "displayName": "CLIuno",
   "description": "Scaffold a full-stack app from CLIuno's contract-tested templates — pick a stack, get a working project.",
-  "version": "2.1.1",
+  "version": "2.1.2",
   "publisher": "cliuno",
   "license": "AGPL-3.0-only",
   "icon": "assets/icon.png",
