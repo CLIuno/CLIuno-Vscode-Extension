@@ -75,9 +75,10 @@ export const TEMPLATES: Template[] = [
     nextSteps: "Run: php artisan migrate && php artisan serve",
   },
   be("Rails", "Rails", "Rails 8 API", "CLIuno-Rails-template", ["bundle install"], "Run: bin/rails db:prepare && bin/rails server"),
-  be("Spring Boot", "Spring Boot", "Spring Boot 3.4 (Java 17)", "CLIuno-Spring-template", [], "Run: ./mvnw spring-boot:run"),
-  be("ASP.NET", "ASP.NET", "ASP.NET Core 8 + EF Core", "CLIuno-ASP.NET-template", [], "Run: dotnet run --project BackendASP.NET"),
+  be("Spring Boot", "Spring Boot", "Spring Boot 4 (Java 17)", "CLIuno-Spring-template", [], "Run: ./mvnw spring-boot:run"),
+  be("ASP.NET", "ASP.NET", "ASP.NET Core 10 + EF Core", "CLIuno-ASP.NET-template", [], "Run: dotnet run --project BackendASP.NET"),
   be("Drogon", "Drogon (C++)", "Drogon C++17, builds in the drogon Docker image", "CLIuno-Drogon-template", [], "Build in the drogonframework/drogon image — see the repo README."),
+  be("Axum", "Axum (Rust)", "Axum + SQLx (SQLite), Rust stable", "CLIuno-Axum-template", ["cargo build"], "Run: cargo run"),
 
   // ---- fullstack (one repo) ----
   {
