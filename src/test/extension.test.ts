@@ -7,7 +7,7 @@ suite("CLIuno extension", () => {
   test("registers the scaffold command", async () => {
     const ext = vscode.extensions.getExtension("cliuno.cliuno")
     assert.ok(ext, "cliuno extension should be present")
-    await ext.activate()
+    await ext!.activate()
     const commands = await vscode.commands.getCommands(true)
     assert.ok(commands.includes("cliuno.scaffold"), "cliuno.scaffold should be registered")
   })
